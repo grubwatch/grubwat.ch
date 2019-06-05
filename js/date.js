@@ -2,7 +2,10 @@
 // The date parameter is actually the day of month, if absent then 1 is assumed.
 // Same for days.
 
-const lastScandalDate = new Date(2019, 5, 4);  // year month day
-const currentDate = Date.now();
+const todaysDate = Date.now();
+const lastScandalDate   = '2019-06-05';   // year month day
 
-let outputDate = Math.floor((currentDate - lastScandalDate) / 24 / 3600 / 1000);
+const timeDiff  = (new Date(todaysDate)) - (new Date(lastScandalDate));
+const days      = timeDiff / (1000 * 60 * 60 * 24)
+
+let outputDate = Math.floor(days);
