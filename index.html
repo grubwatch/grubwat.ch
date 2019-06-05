@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GrubWatch - Days since last Australian Government scandal</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/timeline.css" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js">
+	</script>
+	<script src="js/date.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="title center">
+				<div class="text-center">
+					<img src="img/logo.png">
+				</div>
+				<h1>
+					<span id="number-of-days">
+						<script>
+							document.write(outputDate)
+						</script>
+					</span>&nbsp;days
+					since last Australian Government scandal
+				</h1>
+			</div>
+
+		</div>
+		<h3>Latest scandals:</h3>
+		<div class="timeline">
+
+			<!--
+					Template:
+				`	<div class="scandal">
+						<div class="content">
+							<h4>Title</h4>
+							<p>Short description</p>
+							<h5>Sources</h5>
+							<ul>
+								<li></li>
+							</ul></div></div>
+						-->
+			<div class="scandal left">
+				<div class="content">
+					<h4>(05/06/2019) AFP raid ABC Ultimo: AFP trawl through thousands of files over Afghan Files stories</h4>
+					<p>???</p>
+					<p>???</p>
+
+					<h5>Sources</h5>
+					<ul>
+						<li>ABC: <a href="https://www.abc.net.au/news/2019-06-05/abc-raided-by-australian-federal-police-afghan-files-stories/11181162">ABC raid: AFP trawl through thousands of files over Afghan Files stories</a></li>
+						<li>Newsdotcom: <a href="https://www.news.com.au/finance/business/media/federal-police-raid-abc-offices-in-sydney-over-a-2017-story-about-afghanistan/news-story/3bb1fbe51571d757ca05bb8da0b763d1">Federal Police raid ABC offices in Sydney over 2017 story about Afghanistan, a day after Annika Smethurst search</a></li>
+						<li>AFP: <a href="https://www.afp.gov.au/news-media/media-releases/afp-statement-search-warrant-sydney">AFP statement on search warrant in Sydney</a></li>
+					</ul>
+				</div>
+			</div>
+			` <div class="scandal right">
+				<div class="content">
+					<h4>(04/06/2019) AFP raid News Corp journalist Annika Smethurst's home over alleged national security leak</h4>
+					<p>Police have raided the Canberra home of a News Corp journalist after she reported that the Federal Government was considering spying on Australians.</p>
+					<p>According to The Daily Telegraph, the raid related to a story published in April last year in which Annika Smethurst reported that the Home Affairs and Defence departments were considering giving spy agencies greater surveillance powers.</p>
+
+					<h5>Sources</h5>
+					<ul>
+						<li>ABC: <a href="https://www.abc.net.au/news/2019-06-04/afp-raid-news-corp-journalist-annika-smethurst-home/11177052">Australian Federal Police raid News Corp journalist Annika Smethurst's home over alleged national security leak</a></li>
+						<li>AFP: <a href="https://www.afp.gov.au/news-media/media-releases/afp-statement-search-warrant-kingston-act">AFP statement on search warrant in Kingston, ACT</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div> <!-- container -->
+
+		<footer>
+			<a href="https://github.com/grubwatch/grubwat.ch/">
+				<div class="btn btn-block btn-primary">
+					<h2>Contribute Stories Here</h2>
+				</div>
+			</a>
+			<p>Last update of the website: <script>
+					document.write(document.lastModified)
+				</script>
+				. [Fork of https://dayssincelastfacebookscandal.com/]
+			</p>
+
+		</footer>
+	</div>
+</body>
+
+</html>
